@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Quicksand',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    color: black;
+    background-size: cover;
+    background-position: center center;
+    transition: background-image 1s ease-in-out;
+
+}
+
+#time {
+    font-size: 8rem;
+}
+
+h1{
+    margin-bottom: 3rem;
+}
+
+h2{
+    margin-bottom: 0.5rem;
+    opacity: 0.6;
+}
+
+@media (max-width: 1500px) {
+  #time {
+    font-size: 5rem;
+  }
+
+  #quoteId{
+    width: 450px;
+    height: 200px;
+  }
+    #button {
+
+      width: 35px;
+    height: 35px;
+
+    }
+
+}
+
+@media(max-width: 700px) {
+  #button {
+
+    width: 30px;
+    height: 30px;
+
+  }
+    #time {
+        font-size: 4rem;
+    }
+    #date {
+      font-size: 15px
+    }
+
+}
+
+
+.city {  
+    width: 300px;
+    padding: 10px 0;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .temperature {    
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .weather-description {
+    width: 300px;
+    margin: 20px auto;
+    font-size: 20px;
+    padding: 12px 0;
+    color: #ffffff;
+    background-color:#44aadd;
+    border-radius: 5px;
+  }
+  .weather-icon {
+    font-size: 160px;
+    color: #44aadd;
+  }
+  .weather-icon:hover {
+    animation: shake 1.5s;
+  }
+
+  .weather-description:hover {
+    animation: shake 1.5s;
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+  }
+
+  .quote {
+    font: 1.2rem Georgia, serif;
+    margin: 0;
+    background: rgb(49, 49, 49);
+    padding: 1em;
+    border-radius: 1em;
+  }
+  .quote figcaption,
+  .quote blockquote {
+    margin: 1em;
+  }
+  .quote figcaption {
+    text-align: right;
+  }
+  .flex {
+    display: flex;
+  }
+  .btn {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    background-image: url("https://www.pngarts.com/files/7/Update-Button-PNG-Image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(.8);
+    margin-top:10px ;
+  }
+  .btn:hover {
+    filter: grayscale(.2);
+  }
+  .btn:active,
+  .btn:focus {
+    outline: 0;
+  }
+  .btn:active{
+    transform: scale(1.02)
+  }
+
